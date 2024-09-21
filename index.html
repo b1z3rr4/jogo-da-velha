@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="overlay hidden" id="new-game">
+            <button class="new-game" id="button-new-game">New Game</button>
+        </div>
+        <section id="box-game" class="game">
+            <div id="box-buttons-game-count" class="game-count">
+                <div class="card-game-count bg-blue">
+                    <span>PLAYER X</span>
+                    <p id="count-x">0</p>
+                </div>
+                <div class="card-game-count bg-gray">
+                    <span>DRAW</span>
+                    <p id="count-draw">0</p>
+                </div>
+                <div class="card-game-count bg-yellow">
+                    <span>PLAYER O</span>
+                    <p id="count-o">0</p>
+                </div>
+            </div>
+            <div class="game-positions" id="box-buttons-game-positions">
+                <button class="card-position" id="pos-1" data-position="1"></button>
+                <button class="card-position" id="pos-2" data-position="2"></button>
+                <button class="card-position" id="pos-3" data-position="3"></button>
+                <button class="card-position" id="pos-4" data-position="4"></button>
+                <button class="card-position" id="pos-5" data-position="5"></button>
+                <button class="card-position" id="pos-6" data-position="6"></button>
+                <button class="card-position" id="pos-7" data-position="7"></button>
+                <button class="card-position" id="pos-8" data-position="8"></button>
+                <button class="card-position" id="pos-9" data-position="9"></button>
+            </div>
+        </section>
+    </main>
+    <script src="game.js"></script>
+</body>
+
+</html>
